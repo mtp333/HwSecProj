@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module decrypt #(
-    parameter MSG_LEN = 9,  // Number of characters in the ciphertext
+    parameter MSG_LEN,  // Number of characters in the ciphertext
     parameter SEC_LEN = 9   // Length of the key
 )(
     input  [7:0] text_in[0:MSG_LEN-1],  // Encrypted text input
@@ -44,7 +44,6 @@ module decrypt #(
         secret[6] = "H"; secret[7] = "I"; secret[8] = "V";
     end
 
-    // Function to find the position of a character in the table
     function [7:0] get_position(input [7:0] ch);
         integer r, c;
         begin
@@ -83,4 +82,3 @@ module decrypt #(
     end
 
 endmodule
-
