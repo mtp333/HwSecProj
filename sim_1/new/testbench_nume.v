@@ -48,7 +48,8 @@ module testbench_nume;
     plaintext[0] = "P"; plaintext[1] = "A"; plaintext[2] = "R"; plaintext[3] = "A";
     plaintext[4] = "S"; plaintext[5] = "C"; plaintext[6] = "H"; plaintext[7] = "I";
     plaintext[8] = "V";
-//    #10;
+
+    #10;
 
     // Display the encrypted message
     $display("Encrypted message:");
